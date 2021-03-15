@@ -17,6 +17,7 @@
  */
 
 const faker = require("faker");
+const allureWriter = require('@shelex/cypress-allure-plugin/writer');
 
 module.exports = (on, config) => {
   // `on` is used to hook into various events Cypress emits
@@ -41,4 +42,6 @@ module.exports = (on, config) => {
       return product;
     }
   })
+  allureWriter(on, config);
+  return config
 }
