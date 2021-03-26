@@ -5,6 +5,7 @@ import * as POSTprodutos from '../requests/POST.produtos.request'
 
 describe('POST /produtos', () => {
   let token;
+  let body;
 
   before(() => {
     POSTlogin.login("fulano@qa.com", "teste").then((response) => {
@@ -12,14 +13,13 @@ describe('POST /produtos', () => {
     })
   })
 
-  it('Should insert a product', () => {
-    const body = {
-      nome: "Logitech MX Ver",
-      preco: "470",
-      descricao: "Mouse bom",
-      quantidade: "5"
-    }
+  beforeEach(() => {
+    cy.task("newProduct").then((product) => {
+      body = product
+    })
+  })
 
+  it('Should insert a product', () => {
     POSTprodutos.createProduct(body, token).as('response')
 
     cy.get('@response').then(response => {
