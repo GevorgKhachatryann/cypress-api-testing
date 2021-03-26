@@ -6,8 +6,8 @@
   "scripts": {
     "cypress:open": "./node_modules/.bin/cypress open",
     "cypress:run": "./node_modules/.bin/cypress run --spec **/*.spec.js",
-    "cypresstest:homolog": "./node_modules/.bin/cypress run --config baseUrl=https://serverest.dev",
-    "cypresstest:prod": "./node_modules/.bin/cypress run --config baseUrl=https://serverest.dev"
+    "cypresstest:homolog": "./node_modules/.bin/cypress run --spec **/*.spec.js --config baseUrl=https://serverest.dev",
+    "cypresstest:prod": "./node_modules/.bin/cypress run --spec **/*.spec.js --config baseUrl=https://serverest.dev"
   },
   "keywords": [],
   "author": "",
