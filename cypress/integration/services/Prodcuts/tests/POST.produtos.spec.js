@@ -14,7 +14,7 @@ describe('POST /produtos', () => {
 
   it('Should insert a product', () => {
     const body = {
-      nome: "Logitech MX Vertical novo",
+      nome: "Logitech MX Ver",
       preco: "470",
       descricao: "Mouse bom",
       quantidade: "5"
