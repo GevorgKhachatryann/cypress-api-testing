@@ -3,7 +3,7 @@
 import * as POSTlogin from '../../Login/requests/POST.login.request'
 import * as POSTprodutos from '../requests/POST.produtos.request'
 
-describe('POST /login', () => {
+describe('POST /produtos', () => {
   let token;
 
   before(() => {
@@ -12,9 +12,9 @@ describe('POST /login', () => {
     })
   })
 
-  it('Should insert an account', () => {
+  it('Should insert a product', () => {
     const body = {
-      nome: "Logitech MX Vertical4",
+      nome: "Logitech MX Vertical novo",
       preco: "470",
       descricao: "Mouse bom",
       quantidade: "5"
