@@ -17,6 +17,7 @@
     "cypress": "^6.6.0"
   },
   "dependencies": {
+    "markdownlint-cli": "^0.26.0",
     "allure-commandline": "^2.13.8",
     "faker": "^5.4.0"
   }
