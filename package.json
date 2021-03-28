@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "cypress:open": "./node_modules/.bin/cypress open",
-    "cypress:run": "./node_modules/.bin/cypress run --spec **/*.spec.js",
+    "cypress:run": "./node_modules/.bin/cypress run --spec **/*.spec.js cypress run --record --key c46ea3cc-640a-45b0-bed7-bd3e0d948790",
     "cypresstest:homolog": "./node_modules/.bin/cypress run --spec **/*.spec.js --config baseUrl=https://serverest.dev",
     "cypresstest:prod": "./node_modules/.bin/cypress run --spec **/*.spec.js --config baseUrl=https://serverest.dev"
   },
@@ -19,6 +19,8 @@
   "dependencies": {
     "allure-commandline": "^2.13.8",
     "faker": "^5.4.0",
-    "markdownlint-cli": "^0.26.0"
+    "markdownlint-cli": "^0.26.0",
+    "node": "^15.12.0",
+    "yarn": "^1.22.10"
   }
 }
