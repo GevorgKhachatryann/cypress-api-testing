@@ -23,5 +23,4 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm i
     - run: npm run cypress:run
-    - run: npm run cypresstest:homolog
     - run: npm run cypresstest:prod

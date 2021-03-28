@@ -6,7 +6,7 @@
   "scripts": {
     "cypress:open": "./node_modules/.bin/cypress open",
     "cypress:run": "./node_modules/.bin/cypress run --spec **/*.spec.js cypress run --record --key c46ea3cc-640a-45b0-bed7-bd3e0d948790",
-    "cypresstest:homolog": "./node_modules/.bin/cypress run --spec **/*.spec.js --config baseUrl=https://serverest.dev",
+    "cypresstest:homolog": "./node_modules/.bin/cypress run --spec **/*.spec.js --config baseUrl=http://localhost:3000", 
     "cypresstest:prod": "./node_modules/.bin/cypress run --spec **/*.spec.js --config baseUrl=https://serverest.dev"
   },
   "keywords": [],

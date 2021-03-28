@@ -8,11 +8,11 @@ describe('POST /login', () => {
   it('Should log in an account', () => {
     POSTlogin.login("fulano@qa.com", "teste").then((response) => {
       token = response.body.authorization
-    }).as('response')
+    }).as('response');
 
     cy.get('@response').then(response => {
-      expect(response.status).to.be.equal(200)
-      cy.log(token)
-    })
-  })
-})
+      expect(response.status).to.be.equal(200);
+      cy.log(token);
+    });
+  });
+});
