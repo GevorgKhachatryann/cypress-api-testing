@@ -40,14 +40,13 @@ cypress-api-testing/
   │        │   └── mocha/
   │        │         └── mochafiles (*.json, *html)
   │        │
-  │        ├── support/
-  │        │   ├── databaseCommands.js
-  │        │   ├── apiGeneralCommands.js
-  │        │   ├── api<Categoria>Commands.js
-  │        │   ├── api<Categoria2>Commands.js
-  │        │   └── index.js
-  │        │  
-  │        └── videos/
+  │        └── support/
+  │            ├── databaseCommands.js
+  │            ├── apiGeneralCommands.js
+  │            ├── api<Categoria>Commands.js
+  │            ├── api<Categoria2>Commands.js
+  │            └── index.js
+  │           
   │ 
   ├── environmentsConfig/
   ├── node_modules/
